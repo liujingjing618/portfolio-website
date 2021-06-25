@@ -1,0 +1,85 @@
+/*
+Colors Used:
+Primary Color (Yellow): #f3af38;
+Secondary Color (Coral): #ef615f;
+*/
+
+body {
+    background-color: #ffffff;
+    font-family: "Nunito", sans-serif;
+    font-size: 16px; 
+    font-weight: 300;
+    line-height: 1.6;
+    color:black
+}
+img {
+    width: 100%;
+}
+h1,
+h2,
+h3,
+h4 {
+    line-height: 1.4;
+}
+h1 {
+    font-size: 2.75em;
+    font-weight: 800;
+    color: white;
+}
+
+.about {
+    color: #f3af38;
+    margin: 0 auto;
+}
+h2 {
+    font-size: 2.25em;
+    font-weight: 700;
+}
+h3 {
+    font-size: 1.75em;
+    font-weight: 600;
+}
+h4 {
+    font-size: 1.5em;
+    font-weight: 400;
+}
+a {
+    color: black;
+    text-decoration: none;
+}
+a:hover,
+a:focus {
+    color: #167796;
+    text-decoration: underline;
+}
+a:active {
+    color: #ef615e;
+    text-decoration: none; 
+}
+.button {
+    display: inline-block;
+    background-color: #ef615f;
+    color: white;
+    font-weight: 400;
+    padding: 10px;
+    border-radius: 3px;
+    border-top: 2px solid #c65250;
+    transition: 0.2s opacity;
+}
+.button:active,
+.button:hover {
+    opacity: 0.85;
+    color: white;
+    text-decoration: none;
+}
+.button.contact {
+    background-color: white;
+    color: #ef615e;
+    border: 2px solid #ef615e;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.button.contact:hover {
+    background-color: #ef615e;
+    color: white;
+}
