@@ -18,74 +18,81 @@
 <body>
   <!--Header-->
   <header>
-    <div>
-      <img src="img/logo.png" alt="Jingjing Liu logo">
+    <!--Navigation-->
+    <div class="container"> 
+      <div class="navtoggle" id="myNavtoggle">
+      <!--logo-->
+      <a href="index.html">
+      <img src="img/logo.png" alt="logo" class="logo">
+      </a>
       <nav>
-        <ul>
+        <ul class="navigation">
           <li><a href="index.html">Work</a></li>
           <li><a href="about.html">About</a></li>
+          <li><a href="files/resume.pdf" target="_blank">Resume</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
       </div>
-    </header>
+    </div>
+  </header>
 <!--End Header-->
 
 <!--Hero Section-->
 <main>
-  <div>
-    <div>
-      <h1>Hi, I'm JingJing Liu, <span>A UX designer based in NYC Metro area</span></h1>
-      <p>I'm focused on user-centered UX design.</p>
-    </div>
-  </div>
-<!--End of Hero Section-->
+  <div id="hero"><!--Satrt Hero Section-->
+    <div class="navtoggle" id="myNavtoggle">
+     <div class="container"><!--Satrt container-->
+      <h1>Hi, I'm JingJing,<span>A UX designer based in NYC Metro area</span></h1>
+      <p>With a background in fashion design, I'm focused on human-centered design</p>
+    </div><!--End container-->
+  </div> 
+ </div><!--End of Hero Section-->
 
 <!--Work Projects Section-->
-  <div>
-    <div>
+  <div id="work"><!--Start work Section-->
+    <div class="container"><!--Satrt container-->
       <h2>My Work</h2>
-      <!--Project 1 Section-->
-      <div> 
+      <div class="row"><!--Satrt container that holds project in 2 columns-->
         <div>
           <picture>
               <source srcset="img/hello-world/1x/masthead.jpeg" media="(max-width:767px)">
               <img src="img/hello-world/2x/masthead.jpeg" alt="Hello World">
           </picture>
-        </div>
+        </div><!--End first column-->
         <div>
             <h3>Hello, World</h3>
             <p>"Hello World" is a Vocabulary learning app</p>
             <p>Competitive Analysis, User Research, Wirefaming and Usability Testing</p>
             <a href="helloworld.html" class="button">Read More</a>
-          </div>
-       </div>
+          </div><!--End second column-->
+       </div><!--End container-->
        <!--Project 2 Section-->
-       <div>
+       <div class="row"><!--Start container that holds projects in 2 columns-->
         <div>
           <picture>
               <source srcset="img/peds-in-the-pod/masthead@1x.jpg" media="(max-width:767px)">
               <img src="img/peds-in-the-pod/masthead@2x.jpg" alt="Peds In the Pod">
-          </picture>
-        </div>
+          </picture> 
+        </div><!--End first column-->
           <div>
             <h3>Peds In the Pod</h3>
             <p>"Peds In the Pod" is a mobile app that connects parents with their trustful child experts and supportive community anytime anywhere.</p>
             <p>Competitive Analysis, User Research, Wirefaming and Usability Testing</p>
             <a href="peds.html" class="button">Read More</a>
-          </div>
-       </div>
-    </div>
-  </div>
+          </div><!--End second column-->
+       </div><!--End container that holds projects-->
+    </div><!--End container-->
+  </div><!--End of work section-->
 </main>
 <!--End of Work Projects Section-->
 
 <!--Footer-->
-        <footer id="contact">
-          <div>
+        <footer id="contact"><!--Start footer section-->
+          <div class="container"><!--Start container holding footer content-->
             <h2>Get in Touch</h2>
-            <p>Do you like my work and want to discuss oppotunities? Please get in touch. Call: <a href="tel:+1234567">+1234567
-            </a>
+            <p class="center-align">
+            Do you like my work and want to discuss oppotunities? Please get in touch. Call: <a href="tel:+1234567">+1234567</a>
             Prefer sending an email?
             </p>
             <div>
@@ -117,8 +124,8 @@
           </div>
         </div>
           <div>
-           <p>Copyright Jingjing Liu 2021</p>
-          </div>
+           <p class="copyright">Copyright Jingjing Liu 2021</p>
+          </div><!--End container that holds footer content-->
         </footer>
 <!--End of Footer-->
 </body>
