@@ -4,7 +4,7 @@ Primary Color (Yellow): #f3af38;
 Secondary Color (Coral): #ef615f;
 Hover (Dusty Blue): #167796; 
 Body Background color (cloud): #f5f1ee;
-Header Background color (light grey): #d9d9d9
+Header Background color (light grey): #d9d9d9;
 */
 
 /* Layout Styling */
@@ -16,7 +16,7 @@ html {
 }
 
 body {
-    background-color: #f5f1ee;
+    background-color: white;
     font-family: "Nunito", sans-serif;
     font-size: 18px; 
     font-weight: 300;
@@ -58,7 +58,7 @@ a {
 }
 a:hover,
 a:focus {
-    color: #167796;
+    color: #f5f1ee;
     text-decoration: underline;
 }
 
@@ -73,7 +73,7 @@ a:active {
     background-color: #f3af38;
     color: black;
     text-transform: uppercase;
-    font-weight: 400;
+    font-weight: 500;
     padding: 12px;
     border-radius: 3px;
     border-top: 2px solid #cb912a;
@@ -84,7 +84,6 @@ a:active {
     opacity: 0.8;
     text-decoration: none;
 }
-
 .button.contact {
     background-color: transparent;
     color: #ef615e;
@@ -102,7 +101,7 @@ a:active {
 
 /* Header */
 header {
-    background-color:  #d9d9d9; 
+    background-color: #f5f1ee; 
     position: fixed;
     width: 100%;
     padding: 10px 0;
@@ -139,13 +138,20 @@ nav > ul > li {
 nav > ul > li > a {
     padding: 0 12px;
     text-transform: uppercase;
-    font-weight: 700;
-    color:black;
-    background-color: #f3af38;
+    font-weight: 500;
+    color: black;
+    background-color: #ef615f;
+    display: inline-block;
+}
+
+nav > ul > li > a:hover {
+    color: #f5f1ee;
+    background-color: #ef615f;
     display: inline-block;
 }
 nav > ul > li > a:active {
-    color: #ef615f;
+    color: black;
+    background-color: #f3af38;
 }
 /* Main Styling */ 
 main {
@@ -154,7 +160,7 @@ main {
 
 /* Hero Styling */  
 #hero {
-    background-color: #f5f1ee;
+    background-color: #f3af38;
     text-align: center;
     padding: 20px 0;
     display: inline-block;
@@ -163,7 +169,7 @@ main {
 }
 #hero h1 {
     text-align: center;
-    margin: 0;
+    margin: 22px;
     padding: 0.67 0;
 }
 #hero span {
@@ -172,7 +178,7 @@ main {
 
 /* Footer Styling */ 
 #contact {
-    background-color: #ef615f;
+    background-color:#d9d9d9;
     padding-top: 16px;
     margin-top: 48px;
   }
