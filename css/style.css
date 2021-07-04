@@ -9,49 +9,49 @@ Header Background color (light grey): #d9d9d9;
 */
 * {
     box-sizing: border-box;
-}
-html {
+  }
+  html {
     scroll-behavior: smooth;
-}
-
-body {
+  }
+  
+  body {
     background-color: white;
     font-family: "Nunito", sans-serif;
-    font-size: 18px; 
+    font-size: 18px;
     font-weight: 300;
     line-height: 1.6;
-    color:black
-}  
-h1,
-h2,
-h3,
-h4 {
+    color: black;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
     line-height: 1.4;
-}
-h1 {
+  }
+  h1 {
     font-size: 2.25em;
-    font-weight: 800
-}
-h2 {
+    font-weight: 800;
+  }
+  h2 {
     font-size: 1.75em;
     font-weight: 700;
-}
-h3 {
+  }
+  h3 {
     font-size: 1.5em;
     font-weight: 600;
-}
-h4 {
+  }
+  h4 {
     font-size: 1.35em;
     font-weight: 400;
-}
-
-/* Images */
-img {
+  }
+  
+  /* Images */
+  img {
     width: 100%;
-  } 
-
-/* Buttons */
-.button {
+  }
+  
+  /* Buttons */
+  .button {
     display: inline-block;
     background-color: #f3af38;
     color: black;
@@ -61,13 +61,13 @@ img {
     border-radius: 3px;
     border-top: 2px solid #cb912a;
     transition: 0.2s opacity;
-}
-.button:active,
-.button:hover {
+  }
+  .button:active,
+  .button:hover {
     opacity: 0.8;
     text-decoration: none;
-}
-.button.contact {
+  }
+  .button.contact {
     display: inline-block;
     background-color: transparent;
     color: #ef615f;
@@ -75,189 +75,175 @@ img {
     font-weight: 500;
     border: 2px solid #ef615f;
     margin-left: 6px auto;
-}
-.button.contact:active,
-.button.contact:hover {
+  }
+  .button.contact:active,
+  .button.contact:hover {
     background-color: #ef615f;
     color: black;
-}
-
-/* Layout Styling */
-/* Header */
-header {
-    background-color: #f5f1ee; 
+  }
+  
+  /* Layout Styling */
+  /* Header */
+  header {
+    background-color: #f5f1ee;
     position: fixed;
     width: 100%;
     padding: 10px 0;
-}
-.container {
+  }
+  .container {
     padding: 0 15px;
-}
-.row {
+  }
+  .row {
     margin: 25px 0;
-}
-#work.row {
+  }
+  #work.row {
     margin: 25px 15px;
-    padding-bottom: 25px; 
-    border-bottom: 1px solid #ef615e
-}
-#work h2 {
+    padding-bottom: 25px;
+    border-bottom: 1px solid #ef615e;
+  }
+  #work h2 {
     text-align: center;
-}
-.logo {
-    max-width:250px;
+  }
+  .logo {
+    max-width: 250px;
     margin-top: 8px;
-}
-nav {
+  }
+  nav {
     display: inline-block;
     width: 100%;
-}
-nav > ul {
+  }
+  nav > ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
-}
-
-nav > ul > li {
+  }
+  
+  nav > ul > li {
     display: inline-block;
-}
-
-nav > ul > li > a {
+  }
+  
+  nav > ul > li > a {
     padding: 0 12px;
     text-transform: uppercase;
     font-weight: 500;
     color: black;
     background-color: #ef615f;
     display: inline-block;
-}
-
-nav > ul > li > a:hover {
+  }
+  
+  nav > ul > li > a:hover {
     color: #f5f1ee;
     background-color: #ef615f;
     display: inline-block;
-}
-nav > ul > li > a:active {
+  }
+  nav > ul > li > a:active {
     color: black;
     background-color: #f3af38;
-}
-/* Main Styling */ 
-main {
+  }
+  /* Main Styling */
+  main {
     padding-top: 120px;
-}
-
-/* Hero Styling */  
-#hero {
+  }
+  
+  /* Hero Styling */
+  #hero {
     background-color: #f3af38;
     text-align: center;
     padding: 20px 0;
     display: inline-block;
     width: 100%;
     margin-bottom: 10px;
-}
-#hero h1 {
+  }
+  #hero h1 {
     text-align: center;
     margin: 22px;
     padding: 0.67 0;
-}
-#hero span {
+  }
+  #hero span {
     display: block;
   }
-
-/* Footer Styling */ 
-footer {
-    background-color: #f5f1ee;
-    text-align: center;
-    color: black;
-    bottom: 0
-}
-#footer h2 {
+  
+  /* Footer Styling */
+  #footer h2 {
     text-align: center;
     margin: 22px;
     padding: 0.67 0;
-}
-footer p {
+  }
+  footer p {
     margin-bottom: 10px;
-
-/* Contact */ 
-#contact {
-    background-color: #ef615f;
+  }
+  
+  /* Contact */
+  #contact {
+    background-color: #d9d9d9;
     padding-top: 16px;
     margin-top: 48px;
   }
-#contact h2 {
-    text-align: center; 
-}
-#contact p {
+  #contact h2 {
     text-align: center;
-}
-
-/* Links */
-a {
+  }
+  #contact p {
+    text-align: center;
+  }
+  
+  /* Links */
+  a {
     color: #ef615f;
     text-decoration: none;
-}
-a:hover,
-a:focus {
-    color: #f3af38;
+  }
+  a:hover,
+  a:focus {
+    color: white;
     text-decoration: underline;
-}
-
-a:active {
+  }
+  
+  a:active {
     color: #ef615f;
-    text-decoration: none; 
-}
-
-
-/* Social */ 
-.linkedin {
+    text-decoration: none;
+  }
+  
+  /* Social */
+  
+  .social {
     width: 50%;
-    float: right;
-    text-align: left;
-    padding-left: 10px;
-}
-.behance {
-    width: 50%;
-    float: right;
-    text-align: left;
-    padding-left: 10px;
-}
-.social {
-    max-width: 55px;
-    padding: 10px;
-    margin: 10px;
-}
-
-.about {
+    max-width: 50px;
     text-align: center;
-}
-
-.center {
+    display: inline-block;
+    padding: 0, 15px;
+  }
+  
+  .about {
     text-align: center;
-}
-.section {
+  }
+  
+  .center {
     text-align: center;
-}
-/* Project styling */ 
-#helloworld {
-    background-color:#e9f3f0;
+  }
+  .section {
     text-align: center;
-}
-#helloworld h1 {
+  }
+  /* Project styling */
+  #helloworld {
+    background-color: #e9f3f0;
+    text-align: center;
+  }
+  #helloworld h1 {
     text-align: center;
     margin: 22px;
     padding: 0.67 0;
-}
-#helloworld h2 {
+  }
+  #helloworld h2 {
     text-align: center;
     margin: 22px;
     padding: 0.67 0;
-}
-#helloworld p {
+  }
+  #helloworld p {
     text-align: center;
-}
-
-.headshot {
+  }
+  
+  .headshot {
     width: 50%;
     float: right;
     padding-left: 10px;
-}
+  }
+  
