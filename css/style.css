@@ -8,242 +8,360 @@ Body Background color (cloud): #f5f1ee;
 Header Background color (light grey): #d9d9d9;
 */
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: white;
+  font-family: "Nunito", sans-serif;
+  font-size: 18px; 
+  font-weight: 300;
+  line-height: 1.6;
+  color:black
+}  
+h1,
+h2,
+h3,
+h4 {
+  line-height: 1.4;
+}
+h1 {
+  font-size: 2.25em;
+  font-weight: 800
+}
+h2 {
+  font-size: 1.75em;
+  font-weight: 700;
+}
+h3 {
+  font-size: 1.5em;
+  font-weight: 600;
+}
+h4 {
+  font-size: 1.35em;
+  font-weight: 400;
+}
+
+/* Images */
+img {
+  width: 100%;
+} 
+
+/* Buttons */
+.button {
+  display: inline-block;
+  background-color: #f3af38;
+  color: black;
+  text-transform: uppercase;
+  font-weight: 500;
+  padding: 12px;
+  border-radius: 3px;
+  border-top: 2px solid #cb912a;
+  transition: 0.2s opacity;
+}
+.button:active,
+.button:hover {
+  opacity: 0.8;
+  text-decoration: none;
+}
+.button.contact {
+  display: inline-block;
+  background-color: transparent;
+  color: #ef615f;
+  text-transform: uppercase;
+  font-weight: 500;
+  border: 2px solid #ef615f;
+  margin-left: 6px auto;
+}
+.button.contact:active,
+.button.contact:hover {
+  background-color: #ef615f;
+  color: black;
+}
+
+/* Layout Styling */
+/* Header */
+header {
+  background-color: #f5f1ee; 
+  position: fixed;
+  width: 100%;
+  padding: 10px 0;
+}
+.container {
+  padding: 0 15px;
+}
+.row {
+  margin: 25px 0;
+}
+#work.row {
+  margin: 25px 15px;
+  padding-bottom: 25px; 
+  border-bottom: 1px solid #ef615e
+}
+#work h2 {
+  text-align: center;
+}
+.logo {
+  max-width:250px;
+  margin-top: 8px;
+}
+nav {
+  display: inline-block;
+  width: 100%;
+}
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav > ul > li {
+  display: inline-block;
+}
+
+nav > ul > li > a {
+  padding: 0 12px;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: black;
+  background-color: #ef615f;
+  display: inline-block;
+}
+
+nav > ul > li > a:hover {
+  color: #f5f1ee;
+  background-color: #ef615f;
+  display: inline-block;
+}
+nav > ul > li > a:active {
+  color: black;
+  background-color: #f3af38;
+}
+/* Main Styling */ 
+main {
+  padding-top: 120px;
+}
+
+/* Hero Styling */  
+#hero {
+  background-color: #f3af38;
+  text-align: center;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+#hero h1 {
+  text-align: center;
+  margin: 22px;
+  padding: 0.67 0;
+}
+#hero span {
+  display: block;
+}
+
+/* Footer Styling */ 
+#footer h2 {
+  text-align: center;
+  margin: 22px;
+  padding: 0.67 0;
+}
+footer p {
+  margin-bottom: 10px;
+}
+
+/* Contact */ 
+#contact {
+  background-color: #d9d9d9;
+  padding-top: 16px;
+  margin-top: 48px;
+}
+#contact h2 {
+  text-align: center; 
+}
+#contact p {
+  text-align: center;
+}
+
+/* Links */
+a {
+  color: #ef615f;
+  text-decoration: none;
+}
+a:hover,
+a:focus {
+  color: white;
+  text-decoration: underline;
+}
+
+a:active {
+  color: #ef615f;
+  text-decoration: none; 
+}
+
+
+/* Social */ 
+
+.social {
+  width: 50%;
+  max-width: 50px;
+  text-align: center;
+  display: inline-block;
+  padding: 0, 15px;
+}
+
+#about-page h3 {
+  margin top: 0;
+}
+
+.center {
+  text-align: center;
+}
+.section {
+  text-align: center;
+}
+/* Project styling */ 
+#helloworld {
+  background-color:#e9f3f0;
+  text-align: center;
+}
+#helloworld h1 {
+  text-align: center;
+  margin: 22px;
+  padding: 0.67 0;
+}
+#helloworld h2 {
+  text-align: center;
+  margin: 22px;
+  padding: 0.67 0;
+}
+#helloworld p {
+  text-align: center;
+}
+
+.headshot {
+  width: 100%;
+  float: left;
+  padding-left: 0 px;
+}
+
+[class*="col-"] {
+  float: left;
+  padding-left: 10px;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* ==============================
+Berlin Illustration Animation Example
+================================= */
+.berlin-illustration {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+@keyframes color-change {
+  from {
+    fill: #edc655;
   }
-  html {
-    scroll-behavior: smooth;
+  to {
+    fill: #f76414;
   }
-  
-  body {
-    background-color: white;
-    font-family: "Nunito", sans-serif;
-    font-size: 18px;
-    font-weight: 300;
-    line-height: 1.6;
-    color: black;
+}
+.sun {
+  animation: 4s color-change infinite alternate linear;
+}
+@keyframes cloud-move {
+  from {
+    transform: translate(0, 50px);
   }
-  h1,
-  h2,
-  h3,
-  h4 {
-    line-height: 1.4;
+  to {
+    transform: translate(200px, 50px);
   }
-  h1 {
-    font-size: 2.25em;
-    font-weight: 800;
+}
+.cloud-front {
+  animation: 30s cloud-move infinite alternate linear;
+}
+@keyframes cloud-move-reverse {
+  from {
+    transform: translate(446px, 48px);
   }
-  h2 {
-    font-size: 1.75em;
-    font-weight: 700;
+  to {
+    transform: translate(100px, 48px);
   }
-  h3 {
-    font-size: 1.5em;
-    font-weight: 600;
-  }
-  h4 {
-    font-size: 1.35em;
-    font-weight: 400;
-  }
-  
-  /* Images */
-  img {
-    width: 100%;
-  }
-  
-  /* Buttons */
-  .button {
-    display: inline-block;
-    background-color: #f3af38;
-    color: black;
-    text-transform: uppercase;
-    font-weight: 500;
-    padding: 12px;
-    border-radius: 3px;
-    border-top: 2px solid #cb912a;
-    transition: 0.2s opacity;
-  }
-  .button:active,
-  .button:hover {
-    opacity: 0.8;
-    text-decoration: none;
-  }
-  .button.contact {
-    display: inline-block;
-    background-color: transparent;
-    color: #ef615f;
-    text-transform: uppercase;
-    font-weight: 500;
-    border: 2px solid #ef615f;
-    margin-left: 6px auto;
-  }
-  .button.contact:active,
-  .button.contact:hover {
-    background-color: #ef615f;
-    color: black;
-  }
-  
-  /* Layout Styling */
-  /* Header */
-  header {
-    background-color: #f5f1ee;
-    position: fixed;
-    width: 100%;
-    padding: 10px 0;
-  }
-  .container {
-    padding: 0 15px;
-  }
-  .row {
-    margin: 25px 0;
-  }
-  #work.row {
-    margin: 25px 15px;
-    padding-bottom: 25px;
-    border-bottom: 1px solid #ef615e;
-  }
-  #work h2 {
-    text-align: center;
-  }
-  .logo {
-    max-width: 250px;
-    margin-top: 8px;
-  }
-  nav {
-    display: inline-block;
-    width: 100%;
-  }
-  nav > ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  nav > ul > li {
-    display: inline-block;
-  }
-  
-  nav > ul > li > a {
-    padding: 0 12px;
-    text-transform: uppercase;
-    font-weight: 500;
-    color: black;
-    background-color: #ef615f;
-    display: inline-block;
-  }
-  
-  nav > ul > li > a:hover {
-    color: #f5f1ee;
-    background-color: #ef615f;
-    display: inline-block;
-  }
-  nav > ul > li > a:active {
-    color: black;
-    background-color: #f3af38;
-  }
-  /* Main Styling */
-  main {
-    padding-top: 120px;
-  }
-  
-  /* Hero Styling */
-  #hero {
-    background-color: #f3af38;
-    text-align: center;
-    padding: 20px 0;
-    display: inline-block;
-    width: 100%;
-    margin-bottom: 10px;
-  }
-  #hero h1 {
-    text-align: center;
-    margin: 22px;
-    padding: 0.67 0;
-  }
-  #hero span {
-    display: block;
-  }
-  
-  /* Footer Styling */
-  #footer h2 {
-    text-align: center;
-    margin: 22px;
-    padding: 0.67 0;
-  }
-  footer p {
-    margin-bottom: 10px;
-  }
-  
-  /* Contact */
-  #contact {
-    background-color: #d9d9d9;
-    padding-top: 16px;
-    margin-top: 48px;
-  }
-  #contact h2 {
-    text-align: center;
-  }
-  #contact p {
-    text-align: center;
-  }
-  
-  /* Links */
-  a {
-    color: #ef615f;
-    text-decoration: none;
-  }
-  a:hover,
-  a:focus {
-    color: white;
-    text-decoration: underline;
-  }
-  
-  a:active {
-    color: #ef615f;
-    text-decoration: none;
-  }
-  
-  /* Social */
-  
-  .social {
-    width: 50%;
-    max-width: 50px;
-    text-align: center;
-    display: inline-block;
-    padding: 0, 15px;
-  }
-  
-  .about {
-    text-align: center;
-  }
-  
-  .center {
-    text-align: center;
-  }
-  .section {
-    text-align: center;
-  }
-  /* Project styling */
-  #helloworld {
-    background-color: #e9f3f0;
-    text-align: center;
-  }
-  #helloworld h1 {
-    text-align: center;
-    margin: 22px;
-    padding: 0.67 0;
-  }
-  #helloworld h2 {
-    text-align: center;
-    margin: 22px;
-    padding: 0.67 0;
-  }
-  #helloworld p {
-    text-align: center;
-  }
-  
-  .headshot {
-    width: 50%;
-    float: right;
-    padding-left: 10px;
-  }
-  
+}
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
+}
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+
+header {
+  text-align: unset;
+  padding: 20px 0 13px;
+}
+
+nav {
+  width: auto;
+  float: right;
+  margin-top: 4px;
+}
+main {
+  padding-top: 99px;
+}
+
+.col-md-6 {
+  width: 50%;
+}
+
+[class*="col-"] {
+  float: left;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.logo {
+  margin-top: 0;
+}
+}
+
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+
+.col-lg-5 {
+  width: 41.66%;
+}
+.col-lg-7 {
+  width: 58.33%;
+}
+[class*="col-"] {
+  float: left;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+}
+
