@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>Jingjing Liu</title>
+  <!--CSS-->
   <link
     rel="stylesheet"
     type="text/css"
@@ -12,24 +13,28 @@
   <link
   href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap"
   rel="stylesheet" >
+  <!--CDN links-->
+  <script src="https://kit.fontawesome.com/4b8beec2ba.js" crossorigin="anonymous"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
-<body>
-<!--Header-->
+<body id="homepage">
+  <!--Header-->
   <header>
     <!--Navigation-->
     <div class="container"> 
-      <!--logo-->
+      <div class="navtoggle" id="myNavtoggle">
       <a href="index.html">
       <img src="img/logo.png" alt="logo" class="logo">
       </a>
+    </div>
       <nav>
         <ul class="navigation">
           <li><a href="index.html">Work</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="files/resume.pdf" target="_blank">Resume</a></li>
           <li><a href="#contact">Contact</a></li>
+          <li><a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fas fa-bars"></i></a></li>
         </ul>
       </nav>
     </div>
@@ -71,7 +76,7 @@
               <img src="img/peds-in-the-pod/masthead@2x.jpg" alt="Peds In the Pod">
           </picture> 
         </div><!--End first column-->
-          <div class="col-md-6 col-lg-8 col-xl-4">
+          <div class="col-md-6 col-lg-4 col-xl-8">
             <h3>Peds In the Pod</h3>
             <p>"Peds In the Pod" is a mobile app that connects parents with their trustful child experts and supportive community anytime anywhere.</p>
             <a href="#" class="button">Coming Soon</a>
@@ -1015,7 +1020,7 @@
             </g>
         </svg> 
         </div><!--End first column-->
-          <div>
+          <div class="col-md-6 col-lg-4 col-xl-8">
             <h3>CSS Animation</h3>
             <p>This is an example of a SVG image which is animated using keyframes.</p>
           </div><!--End second column-->
@@ -1064,6 +1069,7 @@
   </div><!--End container that holds footer content-->
 </footer>
 <!--End of Footer-->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"   integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="   crossorigin="anonymous"></script>
 <script src="js/scripts.js"></script>
 </body>
 
