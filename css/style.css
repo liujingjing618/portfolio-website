@@ -47,9 +47,12 @@ h4 {
 
 /* Images */
 img {
-  width: 100%;
+  max-width: 100%;
 } 
-
+.logo {
+  max-width:160px;
+  margin-top: 8px;
+}
 /* Buttons */
 .button {
   display: inline-block;
@@ -86,9 +89,8 @@ img {
 /* Header */
 header {
   background-color: #f5f1ee; 
-  position: fixed;
   width: 100%;
-  padding: 10px 0;
+  padding: 10px 0 4px;
 }
 .container {
   padding: 0 15px;
@@ -101,48 +103,59 @@ header {
   padding-bottom: 25px; 
   border-bottom: 1px solid #ef615e
 }
-#work h2 {
-  text-align: center;
+
+/* Navigation */
+nav > ul {
+  list-style-type: none;
+  padding: 0;
 }
-.logo {
-  max-width:250px;
-  margin-top: 8px;
+.navtoggle li:not(:last-child) {
+  display: none;
 }
-nav {
-  display: inline-block;
-  width: 100%;
+.navtoggle,.navtoggle.responsive {
+  position: relative;
+}
+.navtoggle li.icon (
+  position: absolute;
+  padding-right: 0;
+  top: 2px;
+  font-size: 20px;
+)
+.navtoggle.responsive nav {
+  padding: 12px 0 0;
+}
+.navtoggle.responsive li {
+  display: block;
+  text-align: right;
+  padding: 10px 0; 
+}
+
+.navtoggle.responsive li:last-child {
+  padding: 0;
+}
+nav > ul > li > a {
+  text-transform: uppercase;
+  font-weight: 500;
+  color: black;
+  background-color: #ef615f;
+}
+
+nav > ul > li > a:hover {
+  color: #f5f1ee;
+  background-color: #ef615f;
+}
+nav > ul > li > a:active {
+  color: black;
+  background-color: #f3af38;
 }
 nav > ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
-
-nav > ul > li {
-  display: inline-block;
-}
-
-nav > ul > li > a {
-  padding: 0 12px;
-  text-transform: uppercase;
-  font-weight: 500;
-  color: black;
-  background-color: #ef615f;
-  display: inline-block;
-}
-
-nav > ul > li > a:hover {
-  color: #f5f1ee;
-  background-color: #ef615f;
-  display: inline-block;
-}
-nav > ul > li > a:active {
-  color: black;
-  background-color: #f3af38;
-}
 /* Main Styling */ 
 main {
-  padding-top: 120px;
+  padding-top: 0px;
 }
 
 /* Hero Styling */  
@@ -237,6 +250,11 @@ a:active {
   text-align: center;
 }
 
+#work h2 {
+  margin-top: 20px;
+  text-align: center;
+}
+
 .headshot {
   width: 100%;
   float: left;
@@ -297,22 +315,42 @@ Berlin Illustration Animation Example
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
-@media only screen and (min-width: 640px) {
+@media only screen and (min-width: 641px) {
 
 header {
   text-align: unset;
   padding: 20px 0 13px;
 }
-
+nav > ul > li {
+  display: inline-block;
+}
+nav > ul > li > a {
+  padding: 0 12px;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: black
+  background-color: #ef615f;
+  display: inline-block;
+}
 nav {
   width: auto;
   float: right;
   margin-top: 4px;
+  display: inline-block;
+  width: 100%;
+}
+.navtoggle li:not(:last-child) {
+  display: inline-block;
+}
+.navtoggle li:last-child {
+  display: none;
+}
+nav > ul {
+  margin: 1em, 0;
 }
 main {
   padding-top: 99px;
 }
-
 .col-md-6 {
   width: 50%;
 }
@@ -329,6 +367,7 @@ main {
 }
 .logo {
   margin-top: 0;
+  min-width: 300px;
 }
 }
 
@@ -363,6 +402,33 @@ Large devices (1024px or larger)
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
+}
+nav > ul > li {
+  display: inline-block;
+  min-width: 641px;
+}
+
+nav > ul > li > a {
+  padding: 0 12px;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: black;
+  background-color: #ef615f;
+  display: inline-block;
+}
+nav {
+  width: auto;
+  float: right;
+  margin-top: 4px;
+  display: inline-block;
+  width: 100%;
+}
+
+.navtoggle li:not(:last-child){
+  display: inline-block;
+}
+.navtoggle li:last-child {
+  display: none;
 }
 }
 
