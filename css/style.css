@@ -14,6 +14,76 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Header */
+.logo {
+  max-width:160px;
+}
+header {
+  background-color: #f5f1ee; 
+  width: 100%;
+  padding: 10px 0;
+}
+.container {
+  padding: 0 15px;
+}
+
+
+/* Navigation */
+nav {
+  display: none;
+  width: 100%;
+}
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+}
+nav > ul > li {
+  display: none;
+  list-style-type: none;
+  padding: 0;
+}
+nav > ul > li > a {
+  display: none;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: black;
+  background-color: #ef615f;
+}
+nav > ul > li > a:hover {
+  color: #f5f1ee;
+  background-color: #ef615f;
+}
+nav > ul > li > a:active {
+  color: black;
+  background-color: #f3af38;
+}
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+.navtoggle,.navtoggle.responsive {
+  position: relative;
+}
+/* Hamburger menu */
+.navtoggle li.icon {
+  position: absolute;
+  padding-right: 0;
+  top: 2px;
+  font-size: 20px;
+}
+.navtoggle.responsive nav {
+  padding: 12px 0 0;
+}
+.navtoggle.responsive li {
+  display: block;
+  text-align: right;
+  padding: 10px 0; 
+}
+
+.navtoggle.responsive li:last-child {
+  padding: 0;
+}
+
+/* Body */
 body {
   background-color: white;
   font-family: "Nunito", sans-serif;
@@ -22,6 +92,15 @@ body {
   line-height: 1.6;
   color:black
 }  
+
+.row {
+  margin: 25px 0;
+}
+#work.row {
+  margin: 25px 15px;
+  padding-bottom: 25px; 
+  border-bottom: 1px solid #ef615e
+}
 h1,
 h2,
 h3,
@@ -49,10 +128,7 @@ h4 {
 img {
   max-width: 100%;
 } 
-.logo {
-  max-width:160px;
-  margin-top: 8px;
-}
+
 /* Buttons */
 .button {
   display: inline-block;
@@ -85,74 +161,7 @@ img {
   color: black;
 }
 
-/* Layout Styling */
-/* Header */
-header {
-  background-color: #f5f1ee; 
-  width: 100%;
-  padding: 10px 0 4px;
-}
-.container {
-  padding: 0 15px;
-}
-.row {
-  margin: 25px 0;
-}
-#work.row {
-  margin: 25px 15px;
-  padding-bottom: 25px; 
-  border-bottom: 1px solid #ef615e
-}
 
-/* Navigation */
-nav > ul {
-  list-style-type: none;
-  padding: 0;
-}
-.navtoggle li:not(:last-child) {
-  display: none;
-}
-.navtoggle,.navtoggle.responsive {
-  position: relative;
-}
-.navtoggle li.icon (
-  position: absolute;
-  padding-right: 0;
-  top: 2px;
-  font-size: 20px;
-)
-.navtoggle.responsive nav {
-  padding: 12px 0 0;
-}
-.navtoggle.responsive li {
-  display: block;
-  text-align: right;
-  padding: 10px 0; 
-}
-
-.navtoggle.responsive li:last-child {
-  padding: 0;
-}
-nav > ul > li > a {
-  text-transform: uppercase;
-  font-weight: 500;
-  color: black;
-  background-color: #ef615f;
-}
-
-nav > ul > li > a:hover {
-  color: #f5f1ee;
-  background-color: #ef615f;
-}
-nav > ul > li > a:active {
-  color: black;
-  background-color: #f3af38;
-}
-nav > ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
 /* Main Styling */ 
 main {
   padding-top: 0px;
@@ -217,7 +226,6 @@ a:active {
 
 
 /* Social */ 
-
 .social {
   width: 100%;
   text-align: center;
@@ -321,17 +329,7 @@ header {
   text-align: unset;
   padding: 20px 0 13px;
 }
-nav > ul > li {
-  display: inline-block;
-}
-nav > ul > li > a {
-  padding: 0 12px;
-  text-transform: uppercase;
-  font-weight: 500;
-  color: black
-  background-color: #ef615f;
-  display: inline-block;
-}
+/* Navigation */
 nav {
   width: auto;
   float: right;
@@ -339,6 +337,11 @@ nav {
   display: inline-block;
   width: 100%;
 }
+nav > ul > li {
+  display: inline-block;
+  position: relative;
+}
+
 .navtoggle li:not(:last-child) {
   display: inline-block;
 }
@@ -379,7 +382,7 @@ Large devices (1024px or larger)
 .col-lg-4 {
   width: 33.33%;
 }
-  .col-lg-5 {
+.col-lg-5 {
   width: 41.66%;
 }
 .col-lg-7 {
