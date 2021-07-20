@@ -3,8 +3,9 @@ Colors Used:
 Primary Color (Marigold): #f6be35;
 Secondary Color (Coral): #ef615f;
 Border of button contact color (Dark Coral): #af3836;
-Ecru: #eee8e0
-Footer Background color (smoke blue): #8eb2bc
+Ecru: #eee8e0;
+Project-1 background color (seafoam): #cae5db;
+Footer Background color (smoke blue): #8eb2bc;
 */
 * {
   box-sizing: border-box;
@@ -171,7 +172,7 @@ img {
 }
 .button.contact {
   display: inline-block;
-  background-color: #eee8e0;
+  background-color: transparent;
   color: #ef615f;
   text-transform: uppercase;
   font-weight: 600;
@@ -201,7 +202,7 @@ footer p {
 }
 /* Contact */ 
 #contact {
-  background-color: #8eb2bc;
+  background-color: #;
   padding-top: 16px;
   margin-top: 48px;
 }
@@ -245,7 +246,7 @@ a:active {
 }
 /* Project styling */ 
 #helloworld {
-  background-color:#e9f3f0;
+  background-color: #cae5db;
   text-align: center;
 }
 #helloworld h1 {
