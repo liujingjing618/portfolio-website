@@ -4,8 +4,9 @@ Primary Color (Marigold): #f6be35;
 Secondary Color (Coral): #ef615f;
 Border of button contact color (Dark Coral): #af3836;
 Ecru: #eee8e0;
+Warm Grey: #d1d1d1;
 Project-1 background color (seafoam): #cae5db;
-Footer Background color (smoke blue): #8eb2bc;
+Footer Background color (Smoke Blue): #9db6bd;
 */
 * {
   box-sizing: border-box;
@@ -30,7 +31,7 @@ header {
   box-shadow:         3px 3px 1px 0px rgba(169, 165, 161, 0.75);
 }
 main {
-  padding-top: 99px;
+  padding-top: 120px;
 }
 #hero {
   background-color: #eee8e0;
@@ -162,7 +163,7 @@ img {
   font-weight: 600;
   padding: 12px;
   border-radius: 3px;
-  border-top: 2px solid #cb912a;
+  border-bottom: 2px solid #7a776f;
   transition: 0.2s opacity;
 }
 .button:active,
@@ -202,7 +203,7 @@ footer p {
 }
 /* Contact */ 
 #contact {
-  background-color: #;
+  background-color: #d1d1d1;
   padding-top: 16px;
   margin-top: 48px;
 }
@@ -336,7 +337,7 @@ header {
 }
 
 main {
-  padding-top: 105px;
+  padding-top: 150px;
 }
 /* Navigation */
 nav {
@@ -360,7 +361,7 @@ nav > ul > li {
 }
 
 main {
-  padding-top: 99px;
+  padding-top: 120px;
 }
 .col-md-6 {
   width: 50%;
@@ -387,6 +388,9 @@ Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
 
+main {
+    padding-top: 140px;
+}
 .col-lg-4 {
   width: 33.33%;
 }
