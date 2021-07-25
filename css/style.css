@@ -170,6 +170,8 @@ img {
 .button:hover {
   opacity: 0.8;
   text-decoration: none;
+  background-color: #ef615f;
+  color: black;
 }
 .button.contact {
   display: inline-block;
