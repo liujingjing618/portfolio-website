@@ -17,9 +17,10 @@ html {
 
 /* Header */
 .logo {
-  max-width: 200px;
+  max-width: 210px;
   text-align: center;
-  padding-top: 25px;
+  margin-top: 10px;
+  padding-top: 10px
 }
 header {
   position: fixed;
@@ -31,7 +32,7 @@ header {
   box-shadow:         3px 3px 1px 0px rgba(169, 165, 161, 0.75);
 }
 main {
-  padding-top: 120px;
+  padding-top: 160px;
 }
 #hero {
   background-color: #eee8e0;
@@ -244,12 +245,11 @@ a:active {
   text-align: center;
 }
 .section {
-  text-align: center;
   padding-top: 20px;
 }
 /* Project styling */ 
 #helloworld {
-  background-color: #cae5db;
+  background-color: white;
   text-align: center;
 }
 #helloworld h1 {
@@ -264,6 +264,9 @@ a:active {
 }
 #helloworld p {
   text-align: center;
+}
+.overview {
+  background-color: #cae5db;
 }
 
 #work h2 {
@@ -337,9 +340,12 @@ header {
   text-align: unset;
   padding: 20px 0 13px;
 }
-
+.logo {
+  max-width: 210;
+  margin-top: 0px;
+}
 main {
-  padding-top: 150px;
+  padding-top: 120px;
 }
 /* Navigation */
 nav {
@@ -362,9 +368,6 @@ nav > ul > li {
   display: none;
 }
 
-main {
-  padding-top: 120px;
-}
 .col-md-6 {
   width: 50%;
 }
@@ -379,10 +382,6 @@ main {
   clear: both;
   display: table;
 }
-.logo {
-  margin-top: 10px;
-  min-width: 300px;
-}
 }
 
 /* ==============================
@@ -391,7 +390,7 @@ Large devices (1024px or larger)
 @media only screen and (min-width: 1024px) {
 
 main {
-    padding-top: 140px;
+    padding-top: 120px;
 }
 .col-lg-4 {
   width: 33.33%;
